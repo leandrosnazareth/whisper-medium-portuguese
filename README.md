@@ -1,38 +1,41 @@
 ---
+language:
+- pt
 license: apache-2.0
 tags:
+- whisper-event
 - generated_from_trainer
 datasets:
-- common_voice_11_0
+- mozilla-foundation/common_voice_11_0
 metrics:
 - wer
 model-index:
-- name: openai/whisper-medium
+- name: Whisper Medium Portuguese
   results:
   - task:
       name: Automatic Speech Recognition
       type: automatic-speech-recognition
     dataset:
-      name: common_voice_11_0
-      type: common_voice_11_0
+      name: mozilla-foundation/common_voice_11_0 pt
+      type: mozilla-foundation/common_voice_11_0
       config: pt
       split: test
       args: pt
     metrics:
     - name: Wer
       type: wer
-      value: 6.6794438560212495
+      value: 6.598745817992301
 ---
 
 <!-- This model card has been generated automatically according to the information the Trainer had access to. You
 should probably proofread and complete it, then remove this comment. -->
 
-# openai/whisper-medium
+# Whisper Medium Portuguese
 
-This model is a fine-tuned version of [openai/whisper-medium](https://huggingface.co/openai/whisper-medium) on the common_voice_11_0 dataset.
+This model is a fine-tuned version of [openai/whisper-medium](https://huggingface.co/openai/whisper-medium) on the mozilla-foundation/common_voice_11_0 pt dataset.
 It achieves the following results on the evaluation set:
-- Loss: 0.3212
-- Wer: 6.6794
+- Loss: 0.2628
+- Wer: 6.5987
 
 ## Model description
 
