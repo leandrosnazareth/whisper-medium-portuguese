@@ -8,12 +8,13 @@ datasets:
 - mozilla-foundation/common_voice_11_0
 metrics:
 - wer
+base_model: openai/whisper-medium
 model-index:
 - name: openai/whisper-medium
   results:
   - task:
-      name: Automatic Speech Recognition
       type: automatic-speech-recognition
+      name: Automatic Speech Recognition
     dataset:
       name: mozilla-foundation/common_voice_11_0
       type: mozilla-foundation/common_voice_11_0
@@ -21,9 +22,9 @@ model-index:
       split: test
       args: pt
     metrics:
-    - name: Wer
-      type: wer
+    - type: wer
       value: 6.598745817992301
+      name: Wer
 ---
 
 <!-- This model card has been generated automatically according to the information the Trainer had access to. You
